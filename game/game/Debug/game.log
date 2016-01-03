@@ -1,23 +1,17 @@
-﻿生成启动时间为 2016/1/3 0:16:12。
+﻿生成启动时间为 2016/1/3 22:29:40。
      1>项目“E:\时盈晨\shych\计算机辅修\VC++\game\game\game.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\game.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          所有输出均为最新。
-         E:\software\visualStudio2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\game.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DlgSAVE.cpp MainFrm.cpp NewDlg.cpp game.cpp gameDoc.cpp gameView.cpp
-         正在跳过...(未检测到相关更改)
+         E:\software\visualStudio2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\game.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt gameView.cpp
          gameView.cpp
-         gameDoc.cpp
-         game.cpp
-         NewDlg.cpp
-         MainFrm.cpp
-         DlgSAVE.cpp
        ResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\game.res" game.rc 
+         所有输出均为最新。
        ManifestResourceCompile:
          所有输出均为最新。
        Link:
-         E:\software\visualStudio2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\时盈晨\shych\计算机辅修\VC++\Game\Debug\game.exe" /INCREMENTAL /NOLOGO winmm.lib /MANIFEST /ManifestFile:"Debug\game.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\时盈晨\shych\计算机辅修\VC++\Game\Debug\game.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\时盈晨\shych\计算机辅修\VC++\Game\Debug\game.lib" /MACHINE:X86 Debug\game.res
+         E:\software\visualStudio2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\时盈晨\shych\计算机辅修\VC++\game\Debug\game.exe" /INCREMENTAL /NOLOGO winmm.lib /MANIFEST /ManifestFile:"Debug\game.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\时盈晨\shych\计算机辅修\VC++\game\Debug\game.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\时盈晨\shych\计算机辅修\VC++\game\Debug\game.lib" /MACHINE:X86 Debug\game.res
          Debug\game.exe.embed.manifest.res
          Debug\DlgSAVE.obj
          Debug\game.obj
@@ -32,7 +26,7 @@
          所有输出均为最新。
        LinkEmbedManifest:
          所有输出均为最新。
-         game.vcxproj -> E:\时盈晨\shych\计算机辅修\VC++\Game\Debug\game.exe
+         game.vcxproj -> E:\时盈晨\shych\计算机辅修\VC++\game\Debug\game.exe
        FinalizeBuildStatus:
          正在删除文件“Debug\game.unsuccessfulbuild”。
          正在对“Debug\game.lastbuildstate”执行 Touch 任务。
@@ -40,4 +34,4 @@
 
 生成成功。
 
-已用时间 00:00:01.92
+已用时间 00:00:01.47

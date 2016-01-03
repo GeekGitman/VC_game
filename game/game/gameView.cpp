@@ -149,7 +149,7 @@ void CgameView::OnLButtonUp(UINT nFlags, CPoint point)
 	//当不处在复盘阶段时
 	int x=point.x;int y=point.y;
 	int xindex=(x-lefttopx)/80;int yindex=(y-lefttopy)/80;
-	if(xindex<0 || xindex>=pDoc->n || yindex<0 || yindex>=pDoc->m) return;
+	if((x-lefttopx)<0 || xindex>=pDoc->n || (y-lefttopy)<0 || yindex>=pDoc->m) return;
 	USES_CONVERSION;
 	bool win=(pDoc->THISMAP)->NEXT(yindex,xindex,W2A(pDoc->copypath));
 	//更新状态栏步数
@@ -174,6 +174,7 @@ void CgameView::IWIN(){
 	CString message("你赢了！总共用了");
 	message+=steps;
 	MessageBox(message);
+	AfxGetMainWnd()->GetMenu()->GetSubMenu(1)->CheckMenuItem(3, MF_UNCHECKED | MF_BYPOSITION);
 }
 
 

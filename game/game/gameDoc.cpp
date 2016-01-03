@@ -299,17 +299,23 @@ void CgameDoc::OnEditRecord()
 	  THISMAP->SETCOPY(false,false);
 	}
    else{
-      pSubMenu->CheckMenuItem(3, MF_CHECKED | MF_BYPOSITION);
 	  DlgSAVE save;
 	  save.ifshow=CString("【注】您的文件将保存在项目根目录下的\"reshow\"文件夹中");
 	  CString path;
 	  char* P; 
 	  if(save.DoModal()==IDOK){
 		  path=save.m_File;
+		  //判断文件是否存在
+		  CFileFind finder;
+	      if(finder.FindFile(CString("./reshow/")+path+CString(".re")) && (!save.m_check)){  //文件存在
+			  MessageBox(0,CString("该文件已存在！请重新命名！"),CString("消息"),MB_OK|MB_ICONERROR);
+			  return;
+		  }
 		  //USES_CONVERSION;
 		  //P=W2A(path);
 		  THISMAP->SETCOPY(true,save.m_check);
 		  copypath=path;
+		  pSubMenu->CheckMenuItem(3, MF_CHECKED | MF_BYPOSITION);
 	  }
 	  else{
 		  pSubMenu->CheckMenuItem(3, MF_UNCHECKED | MF_BYPOSITION);
